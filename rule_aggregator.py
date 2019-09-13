@@ -5,8 +5,8 @@ current_directory = os.getcwd()
 a = current_directory +'\\files'
 result = str(a)+ '\\result.xlsx'
 b = os.listdir(a)
-file1 = str(a)+"\\" + b[1]
-file2 = str(a) +"\\" + b[2]
+file1 = str(a)+"\\" + b[0]
+file2 = str(a) +"\\" + b[1]
 
 read_table1 = pd.read_excel(file1, sheet_name='Sheet1')
 read_table2 = pd.read_excel(file2, sheet_name='Sheet1')
