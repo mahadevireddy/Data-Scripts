@@ -1,5 +1,5 @@
 # Data-Scripts
-Rule Aggregator
+
 Rule aggregator is a python script which takes two "%Impact by Rule and FI" files of different dates from power BI in .xlsx format and aggregates total number of accounts grouped by rule name and dates and also outputs the percentage difference between the two compared dates.
 
 Pre-requisite:
