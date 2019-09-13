@@ -13,4 +13,5 @@ Steps to run this script
 4. Navigate one step back and you will find script 'rule_aggregator'.
 5. Double click the script 'rule_aggregator' to execute it (execution time in seconds).
 6. Navigate further to 'files' and you will find a new xlsx created file named 'result' which has the output.
-
+7. For all future file analysis follow steps 2 to 6. 
+Note: The result xlsx file should be closed before executing new rule aggregator. The result file will be overwritten if exists.
