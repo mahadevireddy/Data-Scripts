@@ -1,9 +1,12 @@
 import os
 import pandas as pd
 
-a = os.listdir(r"C:\Users\mreddy3\Desktop\Automation Scripts\Input")
-file1 = r"C:\Users\mreddy3\Desktop\Automation Scripts\Input"+"\\" + a[0]
-file2 = r"C:\Users\mreddy3\Desktop\Automation Scripts\Input" +"\\" + a[1]
+current_directory = os.getcwd()
+a = current_directory +'\\files'
+result = str(a)+ '\\result.xlsx'
+b = os.listdir(a)
+file1 = str(a)+"\\" + b[0]
+file2 = str(a) +"\\" + b[1]
 
 read_table1 = pd.read_excel(file1, sheet_name='Sheet1')
 read_table2 = pd.read_excel(file2, sheet_name='Sheet1')
@@ -24,4 +27,6 @@ table_reshaping['Difference_Percent'] = 100 - ((table_reshaping.iloc[:,1]*100)/t
 
 table_reshaping['Difference_Percent'] = table_reshaping['Difference_Percent'].round(2)
 
-table_reshaping.to_excel(r"C:\Users\mreddy3\Desktop\Automation Scripts\result.xlsx", 'sheet1')
+table_reshaping.to_excel(result, 'sheet1')
+
+
