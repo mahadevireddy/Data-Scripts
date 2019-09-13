@@ -10,6 +10,7 @@ Rule aggregator is a python script which takes two "%Impact by Rule and FI" file
 Pre-requisite:
 1. Windows PC
 2. Python 3.x installed on PC
+3. Pandas Module
 
 Steps to run this script
 1. Download this repository on your machine and unzip/extract the zip file. 
